@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "prototype extenstion to auto click for all cookie policies",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}
